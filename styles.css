@@ -1,0 +1,91 @@
+/* Estilo del encabezado */
+.header {
+  background-color: red; /* Rojo */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos horizontalmente */
+  align-items: center; /* Centra verticalmente los elementos */
+  color: white
+}
+
+
+/* Estilo del logo */
+.logo {
+  width: 160px; /* Doble del ancho actual */
+  margin-left: 20px; /* Espacio entre el logo y el borde izquierdo del encabezado */
+}
+
+/* Estilo del pie de página */
+footer {
+  background-color: #000; /* Negro */
+  color: #fff; /* Blanco */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilo de la gran división */
+.divider {
+  height: 100px; /* Altura deseada para la división */
+}
+
+/* Estilo del contenedor de texto del encabezado */
+.header-text-container {
+  display: flex;
+  margin-right: 20px; /* Ajusta el margen derecho del contenedor */
+}
+
+/* Estilo del texto del encabezado */
+.header-text {
+  font-size: 20px; /* Tamaño de la fuente */
+  margin: 0; /* Elimina el margen por defecto */
+}
+
+.header-text:first-child {
+  margin-right: 10px; /* Ajusta el margen derecho del primer texto */
+}
+
+.header-text:last-child {
+  margin-left: 10px; /* Ajusta el margen izquierdo del último texto */
+}
+
+/* Estilo del primer párrafo */
+.primer-frase {
+  font-family: 'Montserrat', sans-serif; /* Aplica la fuente Montserrat */
+  font-size: 28px; /* Tamaño de la fuente más grande */
+  font-weight: bold; /* Hace que el texto esté en negrita */
+  margin-bottom: 10px; /* Espacio inferior entre el primer párrafo y los demás */
+  text-align: center ; /* Centra el texto */
+  align-items: center;
+}
+
+.segunda-frase{
+  text-align: center;
+}
+
+/* Estilo del contenido */
+.contenido {
+  padding: 20px;
+}
+
+/* Estilo del texto captivante */
+.texto-captivante {
+  font-family: 'Montserrat', sans-serif; /* Aplica la fuente Montserrat */
+  margin: 0; /* Elimina el margen por defecto */
+  margin-right: auto; /* Ajusta el margen derecho del texto para que esté a la izquierda */
+  text-align: center; /* Alinea el texto a la izquierda */
+  display: flex; 
+  padding: 0 5% 0 5%;
+  flex-direction: row;
+  margin: auto ;
+}
+
+/* Estilo de la imagen */
+.img {
+  max-width: 50%; /* Establece el ancho máximo de la imagen al 50% del contenedor */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  display: block; /* Hace que la imagen sea un elemento de bloque */
+}
+
+
+
+
