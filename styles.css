@@ -5,14 +5,88 @@
   display: flex;
   justify-content: space-between; /* Distribuye los elementos horizontalmente */
   align-items: center; /* Centra verticalmente los elementos */
-  color: white
 }
-
 
 /* Estilo del logo */
 .logo {
   width: 160px; /* Doble del ancho actual */
   margin-left: 20px; /* Espacio entre el logo y el borde izquierdo del encabezado */
+}
+
+/* Estilo del texto del encabezado */
+.header-text {
+  font-size: 20px; /* Tamaño de la fuente */
+  margin: 0; /* Elimina el margen por defecto */
+  color: black; /* Color del texto */
+  margin-right: 10px; /* Agrega un margen derecho de 10px */
+}
+
+.contenido-segundo {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center; /* Centra horizontalmente los elementos */
+  text-align: center; /* Alinea el texto al centro */
+  margin-bottom: 20px; /* Espacio entre el contenido */
+  background-color: lightblue;
+}
+
+.titulo{
+  font-weight: bold; /* Letras en negrita */
+}
+
+.contenido-segundo > div:first-child {
+  margin-bottom: 20px; /* Espacio entre el título y las fotos */
+}
+
+.service {
+  flex-direction: row; /* Mantenemos la orientación en fila */
+  margin-bottom: 20px; /* Espacio entre los servicios */
+}
+
+.service-image {
+  width: 200px; /* Ancho fijo para todas las imágenes */
+  height: 150px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Ajustar la imagen manteniendo su relación de aspecto */
+}
+
+.service-title {
+  font-size: 18px; /* Ajustar el tamaño de la letra según tu preferencia */
+  margin-top: 10px; /* Ajustar el espacio superior */
+  color: #000; /* Color de letra negro */
+  font-weight: bold; /* Letras en negrita */
+}
+
+/* Estilo de los enlaces del encabezado */
+.header-link {
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+  color: black; /* Color del texto */
+}
+
+/* Estilo de los enlaces visitados */
+.header-link:visited {
+  color: black; /* Color del texto cuando se toca */
+}
+
+/* Estilo del contenedor de texto del encabezado */
+.header-text-container {
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos */
+}
+
+/* Estilo de los botones del encabezado */
+.header-link button {
+  background-color: #ffffff; /* Color de fondo */
+  border: 1px solid #000000; /* Borde */
+  padding: 8px 16px; /* Espacio interior */
+  color: #000000; /* Color del texto */
+  font-size: 16px; /* Tamaño de letra */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+/* Estilo de los botones del encabezado al pasar el ratón */
+.header-link button:hover {
+  background-color: #000000; /* Color de fondo al pasar el ratón */
+  color: #ffffff; /* Color del texto al pasar el ratón */
 }
 
 /* Estilo del pie de página */
@@ -23,69 +97,98 @@ footer {
   text-align: center;
 }
 
-/* Estilo de la gran división */
-.divider {
-  height: 100px; /* Altura deseada para la división */
+.logo{
+  width: 150px;
+  height: 50px;
 }
 
-/* Estilo del contenedor de texto del encabezado */
-.header-text-container {
-  display: flex;
-  margin-right: 20px; /* Ajusta el margen derecho del contenedor */
-}
-
-/* Estilo del texto del encabezado */
-.header-text {
-  font-size: 20px; /* Tamaño de la fuente */
-  margin: 0; /* Elimina el margen por defecto */
-}
-
-.header-text:first-child {
-  margin-right: 10px; /* Ajusta el margen derecho del primer texto */
-}
-
-.header-text:last-child {
-  margin-left: 10px; /* Ajusta el margen izquierdo del último texto */
-}
-
-/* Estilo del primer párrafo */
-.primer-frase {
-  font-family: 'Montserrat', sans-serif; /* Aplica la fuente Montserrat */
-  font-size: 28px; /* Tamaño de la fuente más grande */
-  font-weight: bold; /* Hace que el texto esté en negrita */
-  margin-bottom: 10px; /* Espacio inferior entre el primer párrafo y los demás */
-  text-align: center ; /* Centra el texto */
-  align-items: center;
-}
-
-.segunda-frase{
-  text-align: center;
-}
-
-/* Estilo del contenido */
-.contenido {
-  padding: 20px;
-}
-
-/* Estilo del texto captivante */
-.texto-captivante {
-  font-family: 'Montserrat', sans-serif; /* Aplica la fuente Montserrat */
-  margin: 0; /* Elimina el margen por defecto */
-  margin-right: auto; /* Ajusta el margen derecho del texto para que esté a la izquierda */
-  text-align: center; /* Alinea el texto a la izquierda */
-  display: flex; 
-  padding: 0 5% 0 5%;
+.menu{
   flex-direction: row;
-  margin: auto ;
 }
 
-/* Estilo de la imagen */
-.img {
-  max-width: 50%; /* Establece el ancho máximo de la imagen al 50% del contenedor */
-  margin: 0 auto; /* Centra la imagen horizontalmente */
-  display: block; /* Hace que la imagen sea un elemento de bloque */
+.primer-frase {
+  font-weight: bold;
+  font-size: 30px; /* Ajustar el tamaño de la letra según tu preferencia */
+  margin-top: 10px; /* Ajustar el espacio superior */
+  max-width: 100%;
+  text-align: center; /* Centrar el texto */
+  margin: auto; /* Centrar horizontalmente */
 }
 
+.segunda-frase {
+  font-size: 15px; /* Ajustar el tamaño de la letra según tu preferencia */
+  margin-top: 10px; /* Ajustar el espacio superior */
+  max-width: 100%;
+  text-align: center; /* Centrar el texto */
+  margin: auto; /* Centrar horizontalmente */
+}
 
+.texto-captivante {
+  display: flex;
+  justify-content: space-between; /* Alinear los elementos a los extremos */
+  align-items: center; /* Alinear verticalmente los elementos */
+}
 
+.texto {
+  flex: 1; /* Que ocupe el espacio restante */
+}
 
+.img-right {
+  max-width: 50%; /* Ajustar el tamaño máximo de la imagen */
+  height: 300px; /* Mantener la proporción de la imagen */
+  width: 1500px;
+}
+
+.primer-frase,
+.segunda-frase {
+  margin-bottom: 10px; /* Agregar un espacio entre las frases */
+}
+
+.comunicacion-interna{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.comunicar{
+  text-align: center;
+  font-size: 20px;
+}
+
+.imagensita {
+  display: block; /* Asegura que la imagen sea un bloque */
+  margin-left: auto; /* Centra la imagen en el lado izquierdo */
+  margin-right: auto; /* Centra la imagen en el lado derecho */
+  max-width: 50%; /* Limita el ancho máximo de la imagen */
+  width: 300px; /* Doble del ancho actual */
+  height: 60px;
+}
+
+.espacio {
+  margin-bottom: 20px; /* Espacio entre los divs de texto y la imagen */
+}
+
+.contenido-tercero {
+  background-color: #ADD8E6; /* Celeste */
+  padding: 100px; /* Ajusta el espacio interno según sea necesario */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas con ancho igualmente distribuido */
+  grid-gap: 10px; /* Espacio entre las celdas */
+}
+
+.grid-item {
+  background-color: #f0f0f0; /* Color de fondo de las celdas */
+  padding: 20px; /* Espacio interno */
+  text-align: center; /* Texto centrado */
+}
+
+.Comu {
+  text-align: center; /* Centra el texto horizontalmente */
+  font-size: 24px; /* Tamaño de fuente más grande */
+  font-weight: bold; /* Texto en negrita */
+  margin-bottom: 20px; /* Ajusta el espacio entre los divs según sea necesario */
+}
