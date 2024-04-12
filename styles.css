@@ -116,7 +116,7 @@ footer {
 }
 
 .segunda-frase {
-  font-size: 15px; /* Ajustar el tamaño de la letra según tu preferencia */
+  font-size: 17px; /* Ajustar el tamaño de la letra según tu preferencia */
   margin-top: 10px; /* Ajustar el espacio superior */
   max-width: 100%;
   text-align: center; /* Centrar el texto */
@@ -135,8 +135,8 @@ footer {
 
 .img-right {
   max-width: 50%; /* Ajustar el tamaño máximo de la imagen */
-  height: 300px; /* Mantener la proporción de la imagen */
-  width: 1500px;
+  height: 750px; /* Mantener la proporción de la imagen */
+  width: 3000px;
 }
 
 .primer-frase,
@@ -172,6 +172,8 @@ footer {
 .contenido-tercero {
   background-color: #ADD8E6; /* Celeste */
   padding: 100px; /* Ajusta el espacio interno según sea necesario */
+  font-size: 21px;
+
 }
 
 .grid-container {
@@ -188,7 +190,42 @@ footer {
 
 .Comu {
   text-align: center; /* Centra el texto horizontalmente */
-  font-size: 24px; /* Tamaño de fuente más grande */
+  font-size: 30px; /* Tamaño de fuente más grande */
   font-weight: bold; /* Texto en negrita */
   margin-bottom: 20px; /* Ajusta el espacio entre los divs según sea necesario */
+}
+
+.grid-item{
+  background-color: lightblue;
+}
+
+.texto {
+  text-align: center; /* Centrar el texto */
+  font-size: 16px; /* Reducir el tamaño de la letra */
+  font-weight: normal; /* Quitar la negrita */
+}
+
+.clientes{
+  text-align: center; /* Centrar el texto */
+  font-size: 30px; /* Reducir el tamaño de la letra */
+}
+
+.ultimo {
+  text-align: center; /* Centrar el texto */
+}
+
+.clientes {
+  font-size: 24px; /* Tamaño del encabezado */
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas con ancho igualmente distribuido */
+  grid-gap: 20px; /* Espacio entre las celdas */
+}
+
+.grid-item {
+  background-color: #f0f0f0; /* Color de fondo de las celdas */
+  padding: 20px; /* Espacio interno */
+  text-align: center; /* Texto centrado */
 }
