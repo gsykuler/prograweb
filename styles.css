@@ -164,12 +164,13 @@ footer {
   margin-bottom: 10px; /* Agregar un espacio entre las frases */
 }
 
-.comunicacion-interna{
-  width: 100vw;
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  margin-bottom: 10px;
+.comunicacion-interna {
+  width: 100%; /* Utiliza el ancho completo del contenedor */
+  text-align: center; /* Centra el texto horizontalmente */
+  font-size: 40px; /* Tamaño de fuente */
+  font-weight: bold; /* Texto en negrita */
+  margin-top: 0vh; /* Ajusta el margen superior según sea necesario */
+  margin-bottom: 5vh; /* Ajusta el margen inferior según sea necesario */
 }
 
 .comunicar{
