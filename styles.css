@@ -71,8 +71,25 @@
 /* Estilo del contenedor de texto del encabezado */
 .header-text-container {
   display: flex;
+  justify-content: space-between;
   align-items: center; /* Alinea verticalmente los elementos */
 }
+
+.header-text-container i {
+  width: 30px;
+  color: white;
+  font-size: 8pt;
+}
+
+.header-text-container a {
+  margin: auto 30px;
+}
+
+.header-text-container a h1 {
+  color: white;
+}
+
+
 
 /* Estilo de los botones del encabezado */
 .header-link button {
@@ -94,8 +111,10 @@
 footer {
   background-color: #000; /* Negro */
   color: #fff; /* Blanco */
-  padding: 20px;
-  text-align: center;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo{
@@ -146,6 +165,7 @@ footer {
 }
 
 .comunicacion-interna{
+  width: 100vw;
   text-align: center;
   font-size: 40px;
   font-weight: bold;
@@ -174,8 +194,11 @@ footer {
 }
 
 .contenido-tercero {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los elementos */
+  flex-wrap: wrap; /* No permite que los elementos se envuelvan */
   background-color: #ADD8E6; /* Celeste */
-  padding: 5vh 100px 100px 100px; /* Ajusta el espacio interno según sea necesario */
+  padding: 3vh 100px 5vh 100px; /* Ajusta el espacio interno según sea necesario */
   font-size: 21px;
 }
 
@@ -226,12 +249,14 @@ footer {
 }
 
 .grid-container2 {
+  width: calc(30vw + 40px);
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columnas con ancho igualmente distribuido */
   grid-gap: 20px; /* Espacio entre las celdas */
 }
 
 .grid-item {
+  width: 10vw;
   background-color: #f0f0f0; /* Color de fondo de las celdas */
   padding: 20px; /* Espacio interno */
   text-align: center; /* Texto centrado */
@@ -247,11 +272,11 @@ footer {
   position: absolute;
   z-index: 1;
   top: calc(90vh - 70px);
-  left: calc(50vw - 250px);
+  left: calc(50vw - (750px / 2));
 }
 
 .caption-carousel h5 {
-  width: 500px;
+  width: 750px;
   color: white;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.5);
@@ -264,7 +289,7 @@ footer {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .listado li {
@@ -296,4 +321,56 @@ footer {
 .ultimo img {
   max-width: 80vw;
   margin: auto;
+}
+
+footer p {
+  text-align: center;
+  margin: 0;
+}
+
+@media only screen and (max-width: 460px) {
+  .listado {
+    flex-direction: column;
+  }
+
+  .listado li, .listado li div img {
+    width: 90vw;
+  }
+
+  .contenido-tercero {
+    padding: 5vh 0;
+  }
+
+  .grid-container2 {
+    width: 90vw;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-item {
+    width: 40vw;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .header-text-container {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .header-text-container a {
+    margin: auto 5px;
+  }
+
+  header h1 {
+    margin: 0;
+  }
+
+  header i {
+    display: none;
+    margin: 0;
+  }
+
 }
