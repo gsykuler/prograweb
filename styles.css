@@ -7,6 +7,21 @@
   align-items: center; /* Centra verticalmente los elementos */
 }
 
+.linkedin{
+  width: 110px;
+}
+
+.facebook{
+  width: 35px;
+  margin-left: 20px;
+}
+
+.mover{
+  display: flex ;
+  max-width: 100%;
+  margin-right: 50px;
+}
+
 /* Estilo del logo */
 .logo {
   width: 160px; /* Doble del ancho actual */
@@ -71,8 +86,9 @@
 /* Estilo del contenedor de texto del encabezado */
 .header-text-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center; /* Alinea verticalmente los elementos */
+  margin-right: 400px;
 }
 
 .header-text-container i {
@@ -87,9 +103,8 @@
 
 .header-text-container a h1 {
   color: white;
+  justify-content: space-between;
 }
-
-
 
 /* Estilo de los botones del encabezado */
 .header-link button {
@@ -353,7 +368,7 @@ footer p {
   }
 
   header {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .header-text-container {
