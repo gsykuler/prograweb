@@ -388,5 +388,8 @@ footer p {
     display: none;
     margin: 0;
   }
+  .mover{
+    display: none;
+  }
 
 }
