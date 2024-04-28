@@ -368,7 +368,7 @@ footer p {
   }
 
   header {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .header-text-container {
