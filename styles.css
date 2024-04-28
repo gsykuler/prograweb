@@ -374,6 +374,7 @@ footer p {
   .header-text-container {
     justify-content: center;
     margin-top: 10px;
+    margin-left: 75px;
   }
 
   .header-text-container a {
