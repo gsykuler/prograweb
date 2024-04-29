@@ -412,7 +412,7 @@ footer p {
   .header-text-container {
     justify-content: center;
     margin-top: 10px;
-    max-width: 50%;
+    max-width: 100%;
   }
 
   .header-text-container a {
