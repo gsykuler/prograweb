@@ -472,11 +472,16 @@ ul {
     display: none;
   }
 
-  .CONTENER{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
+  .CONTENER {
+    display: flex; /* Usa Flexbox para la alineación */
+    flex-direction: row; /* Mantiene los elementos en línea horizontal */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si el espacio es limitado */
+    width: 100vw; /* Asegura que ocupe todo el ancho de la pantalla */
+  }
+
+  .consultoria h2, .capacitaciones h2 {
+    margin: auto;
   }
 }
