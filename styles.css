@@ -7,19 +7,26 @@
   align-items: center; /* Centra verticalmente los elementos */
 }
 
-.linkedin{
-  width: 110px;
+.linkedin {
+  width: 125px; /* Tamaño del logo de LinkedIn */
+  height: 40px; /* Mantiene la proporción */
+  margin-left: 20px; /* Espacio entre elementos */
 }
 
-.facebook{
-  width: 35px;
-  margin-left: 20px;
+.facebook {
+  width: 35px; /* Tamaño del logo de Facebook */
+  height: auto; /* Mantiene la proporción */
+  margin-left: -50px;
 }
 
-.mover{
-  display: flex ;
-  max-width: 100%;
-  margin-right: 50px;
+.mover {
+  display: flex; /* Uso de Flexbox para alineación horizontal */
+  flex-direction: row; /* Asegura que los elementos estén alineados horizontalmente */
+  margin-left: -50px;
+}
+
+.unica{
+  margin-left: -190px;
 }
 
 /* Estilo del logo */
@@ -89,6 +96,7 @@
   justify-content: center;
   align-items: center; /* Alinea verticalmente los elementos */
   margin-right: 400px;
+  margin-left: 50px;
 }
 
 .header-text-container i {
@@ -344,6 +352,36 @@ footer p {
   margin: 0;
 }
 
+.fa-home {
+  color: white; /* Establece el color del ícono a blanco */
+  position: relative; /* Para que z-index funcione */
+  z-index: 10; /* Asegura que el ícono quede en primer plano */
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+.fa-solid{
+  color: white; /* Establece el color del ícono a blanco */
+  position: relative; /* Para que z-index funcione */
+  z-index: 10; /* Asegura que el ícono quede en primer plano */
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+.fa-bell-concierge {
+  color: white; /* Establece el color del ícono a blanco */
+  font-size: 24px; /* Tamaño del ícono */
+  margin-left: 10px;
+}
+
+.fa-envelope {
+  color: white; /* Hace el ícono de color blanco */
+  font-size: 24px; /* Tamaño del ícono */
+  position: relative; /* Permite que z-index funcione */
+  z-index: 10; /* Asegura que esté por encima de otros elementos */
+  margin-left: 10px;
+}
+
 @media only screen and (max-width: 460px) {
   .listado {
     flex-direction: column;
@@ -374,7 +412,6 @@ footer p {
   .header-text-container {
     justify-content: center;
     margin-top: 10px;
-    margin-left: 75px;
   }
 
   .header-text-container a {
@@ -382,7 +419,7 @@ footer p {
   }
 
   header h1 {
-    margin: 0;
+    margin-left: 50px;
   }
 
   header i {
