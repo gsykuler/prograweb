@@ -419,6 +419,15 @@ ul {
   margin-top: 0; /* Evita espacio extra sobre las listas */
 }
 
+.comunicacion-interna2{
+  width: 100%; /* Utiliza el ancho completo del contenedor */
+  text-align: center; /* Centra el texto horizontalmente */
+  font-size: 40px; /* Tamaño de fuente */
+  font-weight: bold; /* Texto en negrita */
+  margin-top: 4vh; /* Ajusta el margen superior según sea necesario */
+  margin-bottom: 5vh; /* Ajusta el margen inferior según sea necesario */
+}
+
 @media only screen and (max-width: 460px) {
   .listado {
     flex-direction: column;
@@ -487,6 +496,6 @@ ul {
 }
 
   .capacitaciones h2{
-    font-size: 18px;
+    font-size: 22px;
   }
 }
