@@ -481,7 +481,12 @@ ul {
     width: 100vw; /* Asegura que ocupe todo el ancho de la pantalla */
   }
 
-  .consultoria h2, .capacitaciones h2 {
-    margin: auto;
+  .consultoria, .capacitaciones {
+    margin: auto; /* Centra el contenido horizontalmente */
+    padding: 0px; /* Agrega espacio interno */
+}
+
+  .capacitaciones h2{
+    font-size: 22px;
   }
 }
