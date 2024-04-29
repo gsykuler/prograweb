@@ -425,7 +425,7 @@ ul {
   font-size: 40px; /* Tamaño de fuente */
   font-weight: bold; /* Texto en negrita */
   margin-top: 4vh; /* Ajusta el margen superior según sea necesario */
-  margin-bottom: 5vh; /* Ajusta el margen inferior según sea necesario */
+  margin-bottom: 2vh; /* Ajusta el margen inferior según sea necesario */
 }
 
 @media only screen and (max-width: 460px) {
