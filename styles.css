@@ -430,7 +430,7 @@ ul {
   margin-bottom: 2vh; /* Ajusta el margen inferior según sea necesario */
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 830px) {
   .listado {
     flex-direction: column;
   }
@@ -515,7 +515,7 @@ ul {
 
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1500px) {
 
   .linkedin{
     display: none;
