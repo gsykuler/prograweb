@@ -244,10 +244,44 @@
                     </div> -->
                 </div>
             </div>
-
+            <div class="contenedor-principal">
+                <!-- Encuesta original -->
+                <div class="encuesta">
+                    <h2 class="comunicacion-interna unos">Encuesta de Satisfacción sobre la Comunicación Organizacional</h2>
+        
+                    <!-- Pregunta 1 -->
+                    <label for="comunicacion-empresa" class="leer">¿Cómo se desarrolla la comunicación interna en tu empresa?</label>
+                    <textarea id="comunicacion-empresa" class="campo-texto" placeholder="Escribe tu respuesta aquí..."></textarea>
+        
+                    <!-- Pregunta 2 -->
+                    <label for="mejora-comunicacion" class="leer">¿Qué le falta a la comunicación en tu organización?</label>
+                    <textarea id="mejora-comunicacion" class="campo-texto" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    
+                    <div class="encuesta-multiple-choice leer">            
+                        <p class="leer2">¿Estás conforme con cómo se desarrolla la comunicación en tu empresa?</p>
+                        <!-- Opciones de conformidad -->
+                        <label>
+                            <input type="radio" name="satisfaccion" value="Muy Satisfecho"> Muy Satisfecho
+                        </label><br>
+                        <label>
+                            <input type="radio" name="satisfaccion" value="Satisfecho"> Satisfecho
+                        </label><br>
+                        <label>
+                            <input type="radio" name="satisfaccion" value="Neutral"> Neutral
+                        </label><br>
+                        <label>
+                            <input type="radio" name="satisfaccion" value="Insatisfecho"> Insatisfecho
+                        </label><br>
+                        <label>
+                            <input type="radio" name="satisfaccion" value="Muy Insatisfecho" class="los"> Muy Insatisfecho
+                        </label><br>
+                        <div class="espacio"></div>
+                        <!-- Botón de envío -->
+                        <button class="boton-enviar" onclick="enviarEncuesta()">Enviar</button>
+                    </div>
+                </div>                
+            </div>
         </main id="footer">
-        <div class="espacio"></div>
-        <!-- Agrega un espacio entre los divs de texto y la imagen -->
         <!-- Footer -->
         <footer id="footer">
             <!-- Información en el footer -->
@@ -257,7 +291,26 @@
         <script 
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous">
+            
+            function enviarEncuesta() {
+                // Obtener valores de los campos de texto
+                var respuesta1 = document.getElementById("comunicacion-empresa").value;
+                var respuesta2 = document.getElementById("mejora-comunicacion").value;
+
+                // Simular el envío de datos (por ejemplo, a un servidor)
+                console.log("Respuesta 1: " + respuesta1);
+                console.log("Respuesta 2: " + respuesta2);
+
+                // Mostrar mensaje de confirmación
+                alert("¡Encuesta enviada con éxito!");
+
+                // Limpiar campos de texto después de enviar
+                document.getElementById("comunicacion-empresa").value = "";
+                document.getElementById("mejora-comunicacion").value = "";
+            }
+        
+        </script>
     </body>
 </html>
 
