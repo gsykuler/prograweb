@@ -568,10 +568,6 @@ ul {
 
 
 @media only screen and (max-width: 830px) {
-
-  .body{
-    background-color: white;
-  }
   .listado {
     flex-direction: column;
   }
@@ -596,7 +592,7 @@ ul {
 
   .pos-f-t{
     display: block;
-    width: 106%;
+    width: 100%;
     margin-top: 15px;
     margin-bottom: -10px;
   }
