@@ -256,30 +256,29 @@
                     <!-- Pregunta 2 -->
                     <label for="mejora-comunicacion" class="leer">¿Qué le falta a la comunicación en tu organización?</label>
                     <textarea id="mejora-comunicacion" class="campo-texto" placeholder="Escribe tu respuesta aquí..."></textarea>
-                    
-                    <div class="encuesta-multiple-choice leer">            
-                        <p class="leer2">¿Estás conforme con cómo se desarrolla la comunicación en tu empresa?</p>
-                        <!-- Opciones de conformidad -->
-                        <label>
-                            <input type="radio" name="satisfaccion" value="Muy Satisfecho"> Muy Satisfecho
-                        </label><br>
-                        <label>
-                            <input type="radio" name="satisfaccion" value="Satisfecho"> Satisfecho
-                        </label><br>
-                        <label>
-                            <input type="radio" name="satisfaccion" value="Neutral"> Neutral
-                        </label><br>
-                        <label>
-                            <input type="radio" name="satisfaccion" value="Insatisfecho"> Insatisfecho
-                        </label><br>
-                        <label>
-                            <input type="radio" name="satisfaccion" value="Muy Insatisfecho" class="los"> Muy Insatisfecho
-                        </label><br>
-                        <div class="espacio"></div>
-                        <!-- Botón de envío -->
-                        <button class="boton-enviar" onclick="enviarEncuesta()">Enviar</button>
-                    </div>
-                </div>                
+                <div>
+                <div class="encuesta-multiple-choice leer">            
+                    <p class="leer2">¿Estás conforme con cómo se desarrolla la comunicación en tu empresa?</p>
+                    <!-- Opciones de conformidad -->
+                    <label>
+                        <input type="radio" name="satisfaccion" value="Muy Satisfecho"> Muy Satisfecho
+                    </label><br>
+                    <label>
+                        <input type="radio" name="satisfaccion" value="Satisfecho"> Satisfecho
+                    </label><br>
+                    <label>
+                        <input type="radio" name="satisfaccion" value="Neutral"> Neutral
+                    </label><br>
+                    <label>
+                        <input type="radio" name="satisfaccion" value="Insatisfecho"> Insatisfecho
+                    </label><br>
+                    <label>
+                        <input type="radio" name="satisfaccion" value="Muy Insatisfecho" class="los"> Muy Insatisfecho
+                    </label><br>
+                    <div class="espacio"></div>
+                    <!-- Botón de envío -->
+                    <button class="boton-enviar" onclick="enviarEncuesta()">Enviar</button>
+                </div>
             </div>
         </main id="footer">
         <!-- Footer -->
@@ -309,6 +308,32 @@
                 document.getElementById("comunicacion-empresa").value = "";
                 document.getElementById("mejora-comunicacion").value = "";
             }
+
+            // Función para mover el texto de arriba hacia abajo
+            function animarMensaje() {
+            const mensaje = document.getElementById("mensaje-gracias");
+            
+            // Posición inicial
+            let posicion = 10; // Posición de inicio (top)
+            let direccion = 1; // Controla la dirección del movimiento
+
+            function mover() {
+                // Modifica la posición para crear el efecto de movimiento
+                if (posicion >= 30 || posicion <= 10) {
+                direccion *= -1; // Cambia la dirección cuando alcanza un límite
+                }
+
+                posicion += 2 * direccion; // Ajusta el valor para el movimiento
+                mensaje.style.top = `${posicion}px`; // Aplica la nueva posición
+
+                requestAnimationFrame(mover); // Vuelve a llamar para continuar la animación
+            }
+
+            requestAnimationFrame(mover); // Inicia la animación
+            }
+
+            // Llama a la función para iniciar la animación
+            animarMensaje();
         
         </script>
     </body>
