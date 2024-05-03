@@ -25,6 +25,9 @@
   margin-left: -50px;
 }
 
+.pos-f-t{
+  display: none;
+}
 .unica{
   margin-left: -190px;
 }
@@ -587,6 +590,13 @@ ul {
     width: 40vw;
   }
 
+  .pos-f-t{
+    display: block;
+    width: 104%;
+    margin-top: 15px;
+    margin-bottom: -10px;
+  }
+    
   header {
     flex-direction: column;
   }
@@ -595,6 +605,7 @@ ul {
     margin-top: 10px;
     flex-direction: row;
     margin-left: 725px;
+    display: none;
   }
 
   .header-text-container a {
