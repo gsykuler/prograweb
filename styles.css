@@ -439,21 +439,50 @@ ul {
   width: 100%; /* Ancho total del contenedor principal */
 }
 
-.encuesta {
-  padding: 20px; 
-  border: 1px solid black; 
-  border-radius: 10px; 
+.titulo-formulario {
+  border: 1px solid black;
+  border-bottom: none;
+  margin: 0;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
   background-color: lightblue; 
-  margin: 20px 0; /* Espacio entre elementos */
+  text-decoration: underline;
+}
+
+.contenido-encuesta {
+  display: flex;
+  background-color: lightblue; 
+}
+
+.encuesta {
+  padding: 20px;
+  padding-bottom: 0;
+  border: 1px solid black;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
   width: 100%; /* Ancho completo para el contenedor de la pregunta */
+}
+
+.encuesta textarea {
+  resize: none;
+  height: 85px;
 }
 
 .encuesta-multiple-choice {
   padding: 20px; 
+  padding-bottom: 0;
   background-color: lightblue; 
-  margin: 20px 0; 
   width: 100%; /* Ancho completo para el contenedor de Multiple Choice */
   padding-left: 2px;
+  border: 1px solid black;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+.encuesta-multiple-choice label {
+  margin-bottom: 15px;
 }
 
 .leer2 {
@@ -472,7 +501,7 @@ ul {
   padding: 10px; 
   border: 1px solid #ccc; 
   border-radius: 5px; 
-  margin-bottom: 20px; /* Espacio entre cuadros de texto */
+  margin-bottom: 30px; /* Espacio entre cuadros de texto */
 }
 
 .boton-enviar {
@@ -493,17 +522,46 @@ ul {
   text-decoration: underline;
 }
 
-.mensaje-gracias {
-  position: absolute; /* Para permitir el movimiento */
-  top: 10px; /* Posición inicial desde la parte superior */
-  left: 50%; /* Centra horizontalmente */
-  transform: translateX(-50%); /* Para centrar correctamente */
-  font-size: 20px; /* Tamaño del texto */
-  background-color: yellow; /* Color de fondo para destacar el texto */
-  padding: 10px; /* Espacio interno */
-  border-radius: 10px; /* Bordes redondeados */
-  transition: top 0.5s ease-in-out; /* Transición para el movimiento suave */
+.caja-boton {
+  background-color: lightblue !important;
+  border: 1px solid black;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
 }
+
+.form-msg {
+  position: absolute;
+  top: 30px;
+  left: calc(50% - 10vw / 2);
+  width: 15vw; 
+  height: 14vw;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px;  /* Añade espacio interno */
+  border: 1px solid black;
+  border-radius: 5px ;
+}
+
+.form-msg p {
+  font-size: 20pt;
+  color: black;
+  margin-bottom: 20px;  /* Espacio entre el texto y el botón */
+  font-weight: bold;
+  text-align: center;
+}
+
+.inactive {
+  display: none; 
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 @media only screen and (max-width: 830px) {
   .listado {
@@ -596,6 +654,22 @@ ul {
     width: 100%;
   }
 
+  .encuesta {
+    border-right: 1px solid black;
+  }
+
+  .encuesta-multiple-choice {
+    border-left: 1px solid black;
+  }
+
+  .leer2 {
+    width: 90vw !important;
+  }
+
+  .form-msg{
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 1500px) {
@@ -653,17 +727,14 @@ ul {
   .contenedor-principal {
     display: flex; /* Para alinear elementos horizontalmente */
     padding: 20px; /* Espacio interno */
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: -10px;
   }
-  
-  .encuesta {
-    padding: 20px; /* Espacio interno */
-    border: 1px solid black; /* Borde del contenedor */
-    border-radius: 10px; /* Bordes redondeados */
-    background-color: lightblue; /* Color de fondo */
-    width: 100%; /* Ancho de cada encuesta */
-    margin: 20px; /* Espacio alrededor del contenedor */
+
+  .contenido-encuesta {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
   }
   
   .unos{
@@ -705,10 +776,6 @@ ul {
   
   /* Estilo para la encuesta de Multiple Choice */
   .encuesta-multiple-choice {
-    padding: 20px; /* Espacio interno */
-    background-color: lightblue; /* Color de fondo */
-    width: 90%; /* Ancho de la encuesta */
-    margin-right: auto; /* Espacio alrededor del contenedor */
-    padding-left: 10px;
+    padding-left: 20px;
   }
 }

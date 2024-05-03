@@ -244,42 +244,48 @@
                     </div> -->
                 </div>
             </div>
+
             <div class="contenedor-principal">
-                <!-- Encuesta original -->
-                <div class="encuesta">
-                    <h2 class="comunicacion-interna unos">Encuesta de Satisfacción sobre la Comunicación Organizacional</h2>
-        
-                    <!-- Pregunta 1 -->
-                    <label for="comunicacion-empresa" class="leer">¿Cómo se desarrolla la comunicación interna en tu empresa?</label>
-                    <textarea id="comunicacion-empresa" class="campo-texto" placeholder="Escribe tu respuesta aquí..."></textarea>
-        
-                    <!-- Pregunta 2 -->
-                    <label for="mejora-comunicacion" class="leer">¿Qué le falta a la comunicación en tu organización?</label>
-                    <textarea id="mejora-comunicacion" class="campo-texto" placeholder="Escribe tu respuesta aquí..."></textarea>
-                <div>
-                <div class="encuesta-multiple-choice leer">            
-                    <p class="leer2">¿Estás conforme con cómo se desarrolla la comunicación en tu empresa?</p>
-                    <!-- Opciones de conformidad -->
-                    <label>
-                        <input type="radio" name="satisfaccion" value="Muy Satisfecho"> Muy Satisfecho
-                    </label><br>
-                    <label>
-                        <input type="radio" name="satisfaccion" value="Satisfecho"> Satisfecho
-                    </label><br>
-                    <label>
-                        <input type="radio" name="satisfaccion" value="Neutral"> Neutral
-                    </label><br>
-                    <label>
-                        <input type="radio" name="satisfaccion" value="Insatisfecho"> Insatisfecho
-                    </label><br>
-                    <label>
-                        <input type="radio" name="satisfaccion" value="Muy Insatisfecho" class="los"> Muy Insatisfecho
-                    </label><br>
-                    <div class="espacio"></div>
+                <form action="">
+                    <div class="comunicacion-interna titulo-formulario">Encuesta de Satisfacción sobre la Comunicación Organizacional</div>
+                    <div class="contenido-encuesta">
+                        <div class="encuesta">
+                            <!-- Pregunta 1 -->
+                            <label for="comunicacion-empresa" class="leer">¿Cómo se desarrolla la comunicación interna en tu empresa?</label>
+                            <textarea id="comunicacion-empresa" class="campo-texto" placeholder="Escribe tu respuesta aquí..."></textarea>
+                
+                            <!-- Pregunta 2 -->
+                            <label for="mejora-comunicacion" class="leer">¿Qué le falta a la comunicación en tu organización?</label>
+                            <textarea id="mejora-comunicacion" class="campo-texto" placeholder="Escribe tu respuesta aquí..."></textarea>
+                        </div>
+                        <div class="encuesta-multiple-choice leer">
+                            <p class="leer2">¿Estás conforme con cómo se desarrolla la comunicación en tu empresa?</p>
+                        <!-- Opciones de conformidad -->
+                        <label>
+                            <input type="radio" name="satisfaccion" value="Muy Satisfecho"> Muy Satisfecho
+                        </label><br>
+                        <label>
+                            <input type="radio" name="satisfaccion" value="Satisfecho"> Satisfecho
+                        </label><br>
+                        <label>
+                            <input type="radio" name="satisfaccion" value="Neutral"> Neutral
+                        </label><br>
+                        <label>
+                            <input type="radio" name="satisfaccion" value="Insatisfecho"> Insatisfecho
+                        </label><br>
+                        <label>
+                            <input type="radio" name="satisfaccion" value="Muy Insatisfecho" class="los"> Muy Insatisfecho
+                        </label><br>
+                        </div>
+                    </div>
                     <!-- Botón de envío -->
-                    <button class="boton-enviar" onclick="enviarEncuesta()">Enviar</button>
-                </div>
+                    <div class="caja-boton">
+                        <button type="reset" class="boton-enviar" onclick="enviarEncuesta()">Enviar</button>
+                    </div>
+                </form>
             </div>
+
+            
         </main id="footer">
         <!-- Footer -->
         <footer id="footer">
@@ -287,55 +293,29 @@
             <p> Ciudad Autónoma de Buenos Aires, Argentina | Teléfono: +54 (911)
                 5670-1928 | Email: trendset@gmail.com</p>
         </footer>
-        <script 
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        <div class="form-msg inactive" id="cajita">
+            <p>¡Gracias por completar la encuesta!</p>
+            <button id="close-cajita" onclick="cerrarCajita()">Cerrar</button>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous">
-            
+            crossorigin="anonymous"></script>
+        <script>
             function enviarEncuesta() {
-                // Obtener valores de los campos de texto
-                var respuesta1 = document.getElementById("comunicacion-empresa").value;
-                var respuesta2 = document.getElementById("mejora-comunicacion").value;
+                let btn = document.getElementById("cajita");
 
-                // Simular el envío de datos (por ejemplo, a un servidor)
-                console.log("Respuesta 1: " + respuesta1);
-                console.log("Respuesta 2: " + respuesta2);
+                btn.classList.toggle("active");
 
-                // Mostrar mensaje de confirmación
-                alert("¡Encuesta enviada con éxito!");
-
-                // Limpiar campos de texto después de enviar
-                document.getElementById("comunicacion-empresa").value = "";
-                document.getElementById("mejora-comunicacion").value = "";
+                setTimeout(() => {
+                    btn.classList.toggle("active");
+                }, 5000)
             }
-
-            // Función para mover el texto de arriba hacia abajo
-            function animarMensaje() {
-            const mensaje = document.getElementById("mensaje-gracias");
             
-            // Posición inicial
-            let posicion = 10; // Posición de inicio (top)
-            let direccion = 1; // Controla la dirección del movimiento
+            function cerrarCajita() {
+                let btn = document.getElementById("cajita");
 
-            function mover() {
-                // Modifica la posición para crear el efecto de movimiento
-                if (posicion >= 30 || posicion <= 10) {
-                direccion *= -1; // Cambia la dirección cuando alcanza un límite
-                }
-
-                posicion += 2 * direccion; // Ajusta el valor para el movimiento
-                mensaje.style.top = `${posicion}px`; // Aplica la nueva posición
-
-                requestAnimationFrame(mover); // Vuelve a llamar para continuar la animación
+                btn.classList.toggle("active");
             }
-
-            requestAnimationFrame(mover); // Inicia la animación
-            }
-
-            // Llama a la función para iniciar la animación
-            animarMensaje();
-        
         </script>
     </body>
 </html>
-
