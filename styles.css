@@ -452,6 +452,7 @@ ul {
 .contenido-encuesta {
   display: flex;
   background-color: lightblue; 
+  margin-bottom: -28px;
 }
 
 .encuesta {
@@ -482,7 +483,7 @@ ul {
 }
 
 .encuesta-multiple-choice label {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .leer2 {
