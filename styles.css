@@ -568,6 +568,10 @@ ul {
 
 
 @media only screen and (max-width: 830px) {
+
+  .body{
+    background-color: white;
+  }
   .listado {
     flex-direction: column;
   }
