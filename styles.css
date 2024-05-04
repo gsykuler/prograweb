@@ -593,17 +593,16 @@ ul {
   .pos-f-t{
     display: block;
     width: 105%;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: -10px;
   }
 
-  body {
-    background-color: lightblue; /* Cambia el color de fondo de la página */
+  .header {
+    background-color: white; /* Cambia el color de fondo de la página */
   }
     
   header {
     flex-direction: column;
-    background-color: white;
   }
 
   .header-text-container {
