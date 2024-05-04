@@ -596,9 +596,14 @@ ul {
     margin-top: 15px;
     margin-bottom: -10px;
   }
+
+  body {
+    background-color: lightblue; /* Cambia el color de fondo de la página */
+  }
     
   header {
     flex-direction: column;
+    background-color: white;
   }
 
   .header-text-container {
