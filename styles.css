@@ -589,17 +589,6 @@ ul {
   .grid-item {
     width: 40vw;
   }
-
-  .pos-f-t{
-    display: block;
-    width: 105%;
-    margin-top: 10px;
-    margin-bottom: -10px;
-  }
-
-  .header {
-    background-color: white; /* Cambia el color de fondo de la página */
-  }
     
   header {
     flex-direction: column;
@@ -609,7 +598,6 @@ ul {
     margin-top: 10px;
     flex-direction: row;
     margin-left: 725px;
-    display: none;
   }
 
   .header-text-container a {
