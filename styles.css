@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+
+.header-text {
+  white-space: nowrap;
+}
+
 /* Estilo del encabezado */
 .header {
   background-color: red; /* Rojo */
@@ -22,7 +28,7 @@
 .mover {
   display: flex; /* Uso de Flexbox para alineación horizontal */
   flex-direction: row; /* Asegura que los elementos estén alineados horizontalmente */
-  margin-left: -50px;
+  margin-left: -400px;
 }
 
 .pos-f-t{
@@ -99,7 +105,7 @@
   justify-content: center;
   align-items: center; /* Alinea verticalmente los elementos */
   margin-right: 725px;
-  margin-left: 50px;
+  margin-left: 1px;
 }
 
 .header-text-container i {
@@ -540,12 +546,13 @@ ul {
   left: calc(50% - 10vw / 2);
   width: 15vw; 
   height: 14vw;
-  background-color: white;
   display: flex;
   align-items: center;
   padding: 20px;  /* Añade espacio interno */
-  border: 1px solid black;
-  border-radius: 5px ;
+  border: 3px solid black;
+  border-radius: 8px;
+  z-index: 999;  /* Alto z-index para estar por encima del resto */
+  background: linear-gradient(to bottom, gold, white);  /* Gradiente de oro a blanco */
 }
 
 .form-msg p {
@@ -554,6 +561,7 @@ ul {
   margin-bottom: 20px;  /* Espacio entre el texto y el botón */
   font-weight: bold;
   text-align: center;
+  font-family: "Quicksand", sans-serif
 }
 
 .inactive {
@@ -597,7 +605,7 @@ ul {
   .header-text-container {
     margin-top: 10px;
     flex-direction: row;
-    margin-left: 725px;
+    margin-left: 730px;
   }
 
   .header-text-container a {
@@ -610,6 +618,7 @@ ul {
   .header-text-container a h1 {
     justify-content: center;
     align-items: center;
+    font-size: 15px;
   }
 
   .header-text-container i{

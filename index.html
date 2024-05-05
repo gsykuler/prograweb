@@ -41,6 +41,10 @@
                 <a href="#footer" class="header-link">
                     <h1 class="header-text">Contacto</h1>
                 </a>
+                <i class="fa-solid fa-circle-question" unir></i>
+                <a href="faqs.html" class="header-link">
+                    <h1 class="header-text">Preguntas Frecuentes</h1>
+                </a>
             </div>
             <div class="mover">
                 <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAAFd-boBSrCoA89sY-mViqpKARcD1KOImuQ&keywords=vanesa%20rosenthal%20%F0%9F%8E%AF&origin=RICH_QUERY_SUGGESTION&position=1&searchId=1eceae55-f9fc-4621-abf1-b58955fb35a2&sid=d1e&spellCorrectionEnabled=false" target="_blank">
@@ -219,7 +223,7 @@
                             </ul>
                         </div>
                         <!-- Segunda sección: Capacitaciones Abiertas e In Company -->
-                        <div class="capacitaciones">
+                        <div class="capacitaciones" id="servicios">
                             <h2>Capacitaciones Abiertas e In Company</h2>
                             <ul>
                                 <li>Redacción Corporativa de e-mails, informes, presentaciones, minutas, redes sociales, etc.</li>
@@ -284,8 +288,6 @@
                     </div>
                 </form>
             </div>
-
-            
         </main id="footer">
         <!-- Footer -->
         <footer id="footer">
@@ -295,28 +297,35 @@
         </footer>
         <div class="form-msg inactive" id="cajita">
             <p>¡Gracias por completar la encuesta!</p>
+            <!-- Botón para iniciar y detener automáticamente el confeti -->
             <button id="close-cajita" onclick="cerrarCajita()">Cerrar</button>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
+        <script src="./confetti.js"></script>
         <script>
             function enviarEncuesta() {
                 let btn = document.getElementById("cajita");
-
+        
                 btn.classList.toggle("active");
-
+        
+                // Inicia la animación de confeti después de 1000ms (1 segundo)
                 setTimeout(() => {
-                    btn.classList.toggle("active");
-                }, 5000)
+                    confetti.start();
+                }, 1000);
+        
+                // Detiene la animación de confeti después de 5000ms (5 segundos)
+                setTimeout(() => {
+                    confetti.stop();
+                }, 6000); // Se detiene después de 6 segundos (1 segundo después de que se muestra el mensaje)
             }
             
             function cerrarCajita() {
                 let btn = document.getElementById("cajita");
-
+        
                 btn.classList.toggle("active");
             }
-
         </script>
     </body>
 </html>
