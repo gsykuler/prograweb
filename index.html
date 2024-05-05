@@ -309,6 +309,10 @@
                 let btn = document.getElementById("cajita");
         
                 btn.classList.toggle("active");
+
+                setTimeout(() => {
+                    btn.classList.toggle("active");
+                }, 8500)
         
                 // Inicia la animación de confeti después de 1000ms (1 segundo)
                 setTimeout(() => {
