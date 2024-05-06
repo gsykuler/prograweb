@@ -121,6 +121,7 @@ section {
 
     a {
         text-decoration: none; /* Sin subrayado */
+        display: flex;
     }
 }
 
