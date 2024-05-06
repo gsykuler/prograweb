@@ -118,6 +118,10 @@ section {
     button {
         margin-left: -165px;
     }
+
+    a {
+        text-decoration: none; /* Sin subrayado */
+    }
 }
 
 
