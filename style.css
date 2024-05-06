@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
 
+header {
+    background-color: #1c1c1c;
+    padding: 10px;
+    text-align: center;
+    color: white; /* Asegúrate de que el texto sea visible */
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-left: -1250px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none; /* Sin subrayado */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -92,4 +112,12 @@ section {
         transform: translateY(0px);
     }
 }
+
+
+@media only screen and (max-width: 480px) {
+    button {
+        margin-left: -225px;
+    }
+}
+
 
