@@ -4,22 +4,21 @@ body {
     padding: 0;
     height: 100vh; /* Asegura que el flexbox funcione para toda la altura de la página */
     background-color: #f5f5f5;
-    
 }
 
 .center {
     display: flex;
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
-    height: 100%; /* Asegura que se extienda a lo largo de toda la página */
+    height: 100%;
 }
 
 .container {
     max-width: 600px; /* Hacer más grande el contenedor */
     padding: 30px; /* Más padding para hacerlo más espacioso */
-    padding-right: 40px; /* Más padding en la derecha */
+    padding-right: 40px;
     background-color: white;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6); /* Aumentar el sombreado */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
     border-radius: 15px;
     text-align: center;
     margin-bottom: -20px;
@@ -28,13 +27,13 @@ body {
 input {
     padding: 15px; /* Aumentar padding para campos */
     margin: 10px 0;
-    width: 100%; /* Mantener el ancho completo */
+    width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 button {
-    padding: 20px 35px; /* Botón más grande */
+    padding: 20px 35px;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -47,20 +46,20 @@ button {
 .result {
     margin-top: 20px;
     font-size: 1.4em; /* Tamaño de texto más grande */
-    color: #333; /* Color para texto */
+    color: #333;
     margin-top: 40px;
     margin-bottom: 10px;
 }
 
-h2{
+h2 {
     font-size: 40px;
 }
 
-label{
+label {
     font-size: 20px;
 }
 
-.especial{
+.especial {
     background-color: black;
     font-weight: bold;
     font-size: 17px;
@@ -69,6 +68,31 @@ label{
     padding: 22px;
 }
 
-header {
-    padding: 15px;
+@media only screen and (max-width: 350px) {
+    .container {
+        max-width: 100%; /* Para usar todo el ancho disponible */
+        padding: 20px; /* Reducir el padding para ahorrar espacio */
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4); /* Sombra menos intensa para móviles */
+    }
+    
+    input {
+        padding: 10px; /* Menos padding para ahorrar espacio */
+    }
+
+    button {
+        padding: 15px 25px; /* Ajustar tamaño para móviles */
+        font-size: 14px; /* Reducir tamaño del texto */
+    }
+
+    h2 {
+        font-size: 30px; /* Reducir tamaño para móviles */
+    }
+
+    label {
+        font-size: 16px; /* Ajustar tamaño de fuente para móviles */
+    }
+
+    .especial {
+        padding: 15px; /* Reducir el padding para móviles */
+    }
 }
