@@ -20,7 +20,7 @@ body {
     padding-right: 40px; /* Más padding en la derecha */
     background-color: white;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6); /* Aumentar el sombreado */
-    border-radius: 10px;
+    border-radius: 15px;
     text-align: center;
     margin-bottom: -20px;
 }
