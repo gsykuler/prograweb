@@ -576,6 +576,10 @@ ul {
 
 
 @media only screen and (max-width: 480px) {
+  .primera{
+    display: none;
+  }
+  
   .listado {
     flex-direction: column;
   }
@@ -618,7 +622,7 @@ ul {
   .header-text-container a h1 {
     justify-content: center;
     align-items: center;
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .header-text-container i{
