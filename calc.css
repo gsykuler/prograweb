@@ -44,10 +44,6 @@ button {
     font-size: 16px;
 }
 
-button:hover {
-    background-color: #45a049; /* Color de hover */
-}
-
 .result {
     margin-top: 20px;
     font-size: 1.4em; /* Tamaño de texto más grande */
@@ -71,4 +67,8 @@ label{
     margin-left: 20px;
     border-radius: 15px;
     padding: 22px;
+}
+
+header {
+    padding: 15px;
 }
