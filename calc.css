@@ -63,3 +63,12 @@ h2{
 label{
     font-size: 20px;
 }
+
+.especial{
+    background-color: black;
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 20px;
+    border-radius: 15px;
+    padding: 22px;
+}
