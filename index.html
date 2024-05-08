@@ -29,10 +29,6 @@
                 <a href="#inicio" class="header-link">
                     <h1 class="header-text">Inicio</h1>
                 </a>
-                <i class="fa-solid fa-briefcase" unir></i>
-                <a href="#nuestro-proposito" class="header-link">
-                    <h1 class="header-text">Empresa</h1>
-                </a>
                 <i class="fa-solid fa-bell-concierge" unir></i>
                 <a href="#servicios" class="header-link">
                     <h1 class="header-text">Servicios</h1>
@@ -44,6 +40,10 @@
                 <i class="fa-solid fa-circle-question" unir></i>
                 <a href="faqs.html" class="header-link">
                     <h1 class="header-text">Preguntas Frecuentes</h1>
+                </a>
+                <i class="fa-solid fa-dollar-sign"></i>
+                <a href="calculadora.html" class="header-link">
+                    <h1 class="header-text">Calculadora Precios</h1>
                 </a>
             </div>
             <div class="mover">
@@ -250,86 +250,104 @@
             </div>
 
             <div class="contenedor-principal">
-                <form action="">
+                <form id="miFormulario" method="POST"> 
+                    <!-- Campo oculto para evitar el captcha -->
+                    <input type="hidden" name="_captcha" value="false"> 
                     <div class="comunicacion-interna titulo-formulario">Encuesta de Satisfacción sobre la Comunicación Organizacional</div>
                     <div class="contenido-encuesta">
                         <div class="encuesta">
-                            <!-- Pregunta 1 -->
                             <label for="comunicacion-empresa" class="leer">¿Cómo se desarrolla la comunicación interna en tu empresa?</label>
-                            <textarea id="comunicacion-empresa" class="campo-texto" placeholder="Escribe tu respuesta aquí..."></textarea>
-                
-                            <!-- Pregunta 2 -->
+                            <textarea id="comunicacion-empresa" class="campo-texto" placeholder="Escribe tu respuesta aquí..." name="comunicacion-empresa"></textarea>
+        
                             <label for="mejora-comunicacion" class="leer">¿Qué le falta a la comunicación en tu organización?</label>
-                            <textarea id="mejora-comunicacion" class="campo-texto" placeholder="Escribe tu respuesta aquí..."></textarea>
+                            <textarea id="mejora-comunicacion" class="campo-texto" placeholder="Escribe tu respuesta aquí..." name="mejora-comunicacion"></textarea>
                         </div>
+        
                         <div class="encuesta-multiple-choice leer">
-                            <p class="leer2">¿Cuan conforme estas con cómo se desarrolla la comunicación en tu empresa?</p>
-                        <!-- Opciones de conformidad -->
-                        <label>
-                            <input type="radio" name="satisfaccion" value="Muy Satisfecho"> Muy Satisfecho
-                        </label><br>
-                        <label>
-                            <input type="radio" name="satisfaccion" value="Satisfecho"> Satisfecho
-                        </label><br>
-                        <label>
-                            <input type="radio" name="satisfaccion" value="Neutral"> Neutral
-                        </label><br>
-                        <label>
-                            <input type="radio" name="satisfaccion" value="Insatisfecho"> Insatisfecho
-                        </label><br>
-                        <label>
-                            <input type="radio" name="satisfaccion" value="Muy Insatisfecho" class="los"> Muy Insatisfecho
-                        </label><br>
+                            <p class="leer2">¿Cuán conforme estás con cómo se desarrolla la comunicación en tu empresa?</p>
+                            <label>
+                                <input type="radio" name="satisfaccion" value="Muy Satisfecho"> Muy Satisfecho
+                            </label><br>
+                            <label>
+                                <input type="radio" name="satisfaccion" value="Satisfecho"> Satisfecho
+                            </label><br>
+                            <label>
+                                <input type="radio" name="satisfaccion" value="Neutral"> Neutral
+                            </label><br>
+                            <label>
+                                <input type="radio" name="satisfaccion" value="Insatisfecho"> Insatisfecho
+                            </label><br>
+                            <label>
+                                <input type="radio" name="satisfaccion" value="Muy Insatisfecho"> Muy Insatisfecho
+                            </label><br>
                         </div>
                     </div>
-                    <!-- Botón de envío -->
+        
                     <div class="caja-boton">
-                        <button type="reset" class="boton-enviar" onclick="enviarEncuesta()">Enviar</button>
+                        <button type="submit" class="boton-enviar" onclick="enviarFormulario(event)">Enviar</button>
                     </div>
                 </form>
             </div>
-        </main id="footer">
-        <!-- Footer -->
-        <footer id="footer">
-            <!-- Información en el footer -->
-            <p> Ciudad Autónoma de Buenos Aires, Argentina | Teléfono: +54 (911)
-                5670-1928 | Email: trendset@gmail.com</p>
-        </footer>
-        <div class="form-msg inactive" id="cajita">
-            <p>¡Gracias por completar la encuesta!</p>
-            <!-- Botón para iniciar y detener automáticamente el confeti -->
-            <button id="close-cajita" onclick="cerrarCajita()">Cerrar</button>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-        <script src="./confetti.js"></script>
-        <script>
-            function enviarEncuesta() {
-                let btn = document.getElementById("cajita");
         
-                btn.classList.toggle("active");
-
-                setTimeout(() => {
-                    btn.classList.toggle("active");
-                }, 8000)
+            <footer id="footer">
+                <!-- Información en el footer -->
+                <p> Ciudad Autónoma de Buenos Aires, Argentina | Teléfono: +54 (911)
+                    5670-1928 | Email: trendset@gmail.com</p>
+            </footer>
         
-                // Inicia la animación de confeti después de 1000ms (1 segundo)
-                setTimeout(() => {
-                    confetti.start();
-                }, 1000);
-        
-                // Detiene la animación de confeti después de 5000ms (5 segundos)
-                setTimeout(() => {
-                    confetti.stop();
-                }, 5000); // Se detiene después de 6 segundos (1 segundo después de que se muestra el mensaje)
-            }
+            <div class="form-msg inactive" id="cajita">
+                <p>¡Gracias por completar la encuesta!</p>
+                <button id="close-cajita" onclick="cerrarCajita()">Cerrar</button>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
             
-            function cerrarCajita() {
-                let btn = document.getElementById("cajita");
-        
-                btn.classList.toggle("active");
-            }
-        </script>
+            <script src="./confetti.js"></script>
+
+            <script>
+                function enviarFormulario(event) {
+                    event.preventDefault(); // Prevenir redirigimientos
+                
+                    const formData = new FormData(document.getElementById("miFormulario"));
+                    miFormulario.reset();
+                
+                    fetch("https://formsubmit.co/gsykuler@gmail.com", { 
+                        method: "POST",
+                        body: formData
+                    })
+                    .then(response => {
+                        if (response.ok) {
+                            const cajita = document.getElementById("cajita");
+                
+                            // Mostrar el cartel de "Gracias" inmediatamente
+                            cajita.classList.add("active");
+
+                            // Iniciar el confeti al mismo tiempo que aparece el cartel
+                            setTimeout(() => {
+                                confetti.start();
+                            }, 1000);
+                
+                            // Detener el confeti después de 6 segundos
+                            setTimeout(() => {
+                                confetti.stop();
+                            }, 6000);
+                
+                            // Ocultar el cartel después de 8 segundos
+                            setTimeout(() => {
+                                cajita.classList.remove("active");
+                            }, 8000);
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Error al enviar el formulario:", error);
+                    });
+                }
+                
+                function cerrarCajita() {
+                    const cajita = document.getElementById("cajita");
+                    cajita.classList.remove("active");
+                }
+                </script>                
     </body>
 </html>
