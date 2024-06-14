@@ -641,10 +641,10 @@ p{
   }
   
   .header{
-    margin-right: -300px;
+    margin-right: -500px;
     display: flex;
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
   }
 
   .primera{
