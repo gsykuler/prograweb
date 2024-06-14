@@ -638,6 +638,8 @@ p{
 @media only screen and (max-width: 480px) {
   .centrado{
     margin-left: 100px;
+    display: flex;
+    text-align: center;
   }
 
   .primera{
