@@ -637,7 +637,7 @@ p{
 
 @media only screen and (max-width: 480px) {
   .centrado{
-    margin-right: 20px;
+    margin-right: -100px;
     display: flex;
     text-align: center;
     font-size: 40px;
