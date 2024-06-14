@@ -636,6 +636,10 @@ p{
 }
 
 @media only screen and (max-width: 480px) {
+  .comunicacion-interna{
+    font-size: 40px;
+  }
+  
   .centrado{
     padding-right: -3000px;
     display: flex;
