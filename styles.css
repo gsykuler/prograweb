@@ -640,8 +640,8 @@ p{
     font-size: 40px;
   }
   
-  .centrado{
-    padding-right: -3000px;
+  .header{
+    margin-right: -30px;
     display: flex;
     text-align: center;
     font-size: 40px;
