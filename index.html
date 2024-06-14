@@ -205,7 +205,7 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="total">
                     <h1 class="comunicacion-interna2">NUESTROS SERVICIOS</h1>
                     <div class="CONTENER">
                         <!-- Primera sección: Consultoría -->
@@ -287,6 +287,26 @@
                         <button type="submit" class="boton-enviar" onclick="enviarFormulario(event)">Enviar</button>
                     </div>
                 </form>
+
+                <div class="container">
+                    <div class="header">
+                        <p><strong class="centrado">Algunos datos sobre TrendSet</strong></p>
+                    </div>
+                    <div class="stats" id="stats-section">
+                        <div class="stat">
+                            <span class="number" id="clients">+0</span>
+                            <p>Clientes históricos</p>
+                        </div>
+                        <div class="stat">
+                            <span class="number" id="courses">+0</span>
+                            <p>Cursos y Capacitaciones</p>
+                        </div>
+                    </div>
+                    <div class="customers">
+                        <span class="customer-name" id="customers">Clarin</span>
+                        <p>Clientes principales</p>
+                    </div>
+                </div>
             </div>
         
             <footer id="footer">
@@ -348,6 +368,61 @@
                     const cajita = document.getElementById("cajita");
                     cajita.classList.remove("active");
                 }
+
+                function incrementCounter(elementId, target, duration) {
+                    const element = document.getElementById(elementId);
+                    let start = 0;
+                    const increment = target / (duration / 10); // Calculate increment
+
+                    const updateCounter = () => {
+                        start += increment;
+                        if (start < target) {
+                            element.textContent = `+${Math.ceil(start)}`;
+                        } else {
+                            element.textContent = `+${target}`;
+                            clearInterval(interval); // Stop the interval when target is reached
+                        }
+                    };
+
+                    const interval = setInterval(updateCounter, 10); // Update every 10ms
+                }
+
+                function rotateCustomers(elementId, customers, intervalDuration) {
+                    const element = document.getElementById(elementId);
+                    let index = 0;
+
+                    const updateCustomer = () => {
+                        element.textContent = customers[index];
+                        index = (index + 1) % customers.length;
+                    };
+
+                    setInterval(updateCustomer, intervalDuration);
+                }
+
+                // Function to start animations when the section is in view
+                function startAnimations() {
+                    // Increment counters
+                    incrementCounter('clients', 500, 2000); // Increment to 500 in 2 seconds
+                    incrementCounter('courses', 1438, 2000); // Increment to 1438 in 2 seconds
+
+                    // Rotate customers
+                    const customers = ['Clarin', 'Banco Patagonia', 'Latam', 'Mcdonalds', 'Carrefour', 'Banco Santander', 'Techint', 'La Caja Seguros', 'Starbucks'];
+                    rotateCustomers('customers', customers, 1500); // Rotate every 1.5 seconds
+                }
+
+                // Intersection Observer to detect when the stats section is in view
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            startAnimations();
+                            observer.unobserve(entry.target); // Stop observing after starting the animation
+                        }
+                    });
+                }, { threshold: 0.5 });
+
+                observer.observe(document.getElementById('stats-section'));
+
+
                 </script>                
     </body>
 </html>

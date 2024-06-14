@@ -6,11 +6,13 @@
 
 /* Estilo del encabezado */
 .header {
-  background-color: red; /* Rojo */
+  background-color: white; /* Rojo */
   padding: 10px;
   display: flex;
   justify-content: space-between; /* Distribuye los elementos horizontalmente */
   align-items: center; /* Centra verticalmente los elementos */
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .linkedin {
@@ -58,7 +60,8 @@
   align-items: center; /* Centra horizontalmente los elementos */
   text-align: center; /* Alinea el texto al centro */
   margin-bottom: 20px; /* Espacio entre el contenido */
-  background-color: lightblue;
+  background-color: white;
+  margin-top: 50px;
 }
 
 .titulo{
@@ -110,18 +113,18 @@
 
 .header-text-container i {
   width: 30px;
-  color: white;
+  color: black;
   font-size: 8pt;
 }
 
 .header-text-container a {
   margin: auto 30px;
-  margin-right: 15px;
+  margin-right: 5px;
   margin-left: 15px;
 }
 
 .header-text-container a h1 {
-  color: white;
+  color: black;
   justify-content: space-between;
 }
 
@@ -201,7 +204,7 @@ footer {
 .comunicacion-interna {
   width: 100%; /* Utiliza el ancho completo del contenedor */
   text-align: center; /* Centra el texto horizontalmente */
-  font-size: 40px; /* Tamaño de fuente */
+  font-size: 60px; /* Tamaño de fuente */
   font-weight: bold; /* Texto en negrita */
   margin-top: 0vh; /* Ajusta el margen superior según sea necesario */
   margin-bottom: 5vh; /* Ajusta el margen inferior según sea necesario */
@@ -221,7 +224,7 @@ footer {
   max-width: 50%; /* Limita el ancho máximo de la imagen */
   width: 300px; /* Doble del ancho actual */
   height: 60px;
-  margin-top: 5vh;
+  margin-top: 8vh;
 }
 
 .espacio {
@@ -232,9 +235,11 @@ footer {
   display: flex;
   justify-content: center; /* Centra horizontalmente los elementos */
   flex-wrap: wrap; /* No permite que los elementos se envuelvan */
-  background-color: #ADD8E6; /* Celeste */
+  background-color: white; /* Celeste */
   padding: 3vh 100px 5vh 100px; /* Ajusta el espacio interno según sea necesario */
   font-size: 21px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .grid-container {
@@ -257,7 +262,7 @@ footer {
 }
 
 .grid-item{
-  background-color: lightblue;
+  background-color: white;
 }
 
 .grid-item img {
@@ -343,6 +348,7 @@ footer {
 
 .comunicacion {
   padding: 5vh;
+  margin-top: 50px;
 }
 
 .ultimo {
@@ -433,12 +439,15 @@ ul {
 .comunicacion-interna2{
   width: 100%; /* Utiliza el ancho completo del contenedor */
   text-align: center; /* Centra el texto horizontalmente */
-  font-size: 40px; /* Tamaño de fuente */
+  font-size: 60px; /* Tamaño de fuente */
   font-weight: bold; /* Texto en negrita */
   margin-top: 4vh; /* Ajusta el margen superior según sea necesario */
   margin-bottom: 2vh; /* Ajusta el margen inferior según sea necesario */
 }
 
+.total{
+  margin-bottom: 50px;
+}
 /* #ACA */
 
 .contenedor-principal {
@@ -454,13 +463,13 @@ ul {
   margin: 0;
   padding: 20px;
   border-radius: 10px 10px 0 0;
-  background-color: lightblue; 
+  background-color: white; 
   text-decoration: underline;
 }
 
 .contenido-encuesta {
   display: flex;
-  background-color: lightblue; 
+  background-color: white; 
   margin-bottom: -28px;
 }
 
@@ -482,7 +491,7 @@ ul {
 .encuesta-multiple-choice {
   padding: 20px; 
   padding-bottom: 0;
-  background-color: lightblue; 
+  background-color: white; 
   width: 100%; /* Ancho completo para el contenedor de Multiple Choice */
   padding-left: 2px;
   border: 1px solid black;
@@ -533,7 +542,7 @@ ul {
 }
 
 .caja-boton {
-  background-color: lightblue !important;
+  background-color: white !important;
   border: 1px solid black;
   border-top: none;
   border-radius: 0 0 10px 10px;
@@ -574,6 +583,57 @@ ul {
   align-items: center;
 }
 
+.container {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.header {
+  margin-bottom: 0px;
+}
+
+.header p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.stat {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.number {
+  font-size: 3rem;
+  color: #c00;
+}
+
+.customers {
+  text-align: center;
+}
+
+.customer-name {
+  font-size: 3rem;
+  color: #c00;
+}
+
+p{
+  font-size: 18px;
+}
+
+.centrado {
+  width: 100%; /* Utiliza el ancho completo del contenedor */
+  text-align: center; /* Centra el texto horizontalmente */
+  font-size: 60px; /* Tamaño de fuente */
+  font-weight: bold; /* Texto en negrita */
+  margin-left: 210px;
+}
 
 @media only screen and (max-width: 480px) {
   .primera{
