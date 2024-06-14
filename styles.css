@@ -637,9 +637,10 @@ p{
 
 @media only screen and (max-width: 480px) {
   .centrado{
-    margin-left: 200px;
+    margin-right: 20px;
     display: flex;
     text-align: center;
+    font-size: 40px;
   }
 
   .primera{
