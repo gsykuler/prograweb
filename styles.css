@@ -642,9 +642,7 @@ p{
   
   .centrado{
     margin-right: -500px;
-    display: flex;
-    text-align: center;
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .primera{
