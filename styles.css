@@ -589,11 +589,11 @@ ul {
   margin-bottom: 40px;
 }
 
-.header {
+.header1 {
   margin-bottom: 0px;
 }
 
-.header p {
+.header1 p {
   font-size: 2rem;
   font-weight: bold;
 }
@@ -632,7 +632,7 @@ p{
   text-align: center; /* Centra el texto horizontalmente */
   font-size: 60px; /* Tamaño de fuente */
   font-weight: bold; /* Texto en negrita */
-  margin-left: 210px;
+  margin-left: 20px;
 }
 
 @media only screen and (max-width: 480px) {
