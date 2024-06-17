@@ -632,7 +632,7 @@ p{
   text-align: center; /* Centra el texto horizontalmente */
   font-size: 60px; /* Tamaño de fuente */
   font-weight: bold; /* Texto en negrita */
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 @media only screen and (max-width: 480px) {
