@@ -658,6 +658,22 @@ p{
     text-align: center;
   }
 
+  .stats, .customers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat, .customers {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .header1, .stats, .customers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .primera{
     display: none;
   }
