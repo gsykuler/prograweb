@@ -636,6 +636,9 @@ p{
 }
 
 @media only screen and (max-width: 480px) {
+  .container{
+    width: auto;
+  }
   .comunicacion-interna{
     font-size: 40px;
   }
