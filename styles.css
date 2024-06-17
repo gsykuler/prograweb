@@ -636,16 +636,25 @@ p{
 }
 
 @media only screen and (max-width: 480px) {
-  .container{
-    width: auto;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .comunicacion-interna{
-    font-size: 40px;
+
+  .header1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
-  
-  .veras{
-    margin-right: -500px;
-    font-size: 30px;
+
+  .veras {
+    text-align: center;
+    width: 100%;
+  }
+
+  .centrado {
     text-align: center;
   }
 
