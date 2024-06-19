@@ -767,11 +767,6 @@ p{
       padding: 0.5rem;
   }
 
-  .navbar-brand {
-      display: flex;
-      align-items: center;
-  }
-
   .navbar-brand .logo {
       max-height: 40px;
       margin-right: 0.5rem;
@@ -794,13 +789,6 @@ p{
       width: 100%;
       text-align: center;
       margin: 0;
-  }
-
-  .nav-link {
-      padding: 0.5rem 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
   }
 
   .nav-link i {
