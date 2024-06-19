@@ -760,7 +760,7 @@ p{
 
 @media only screen and (max-width: 480px) {
   .logo{
-    margin-left: 160px;
+    margin-left: 200px;
   }
 
   .navbar {
@@ -778,7 +778,7 @@ p{
   }
 
   .navbar-toggler {
-      margin-right: 130px;
+      margin-right: 150px;
   }
 
   .navbar-collapse {
