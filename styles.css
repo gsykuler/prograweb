@@ -710,6 +710,50 @@ p{
   margin-left: 20px;
 }
 
+/* Estilos personalizados para el header */
+.header {
+  margin-bottom: none;
+}
+
+.logo {
+  height: 50px; /* Ajusta el tamaño del logo */
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; /* Ajusta el espacio entre los enlaces */
+}
+
+.nav-link i {
+  margin-right: 4px; /* Reduce el espacio entre el icono y el texto */
+}
+
+.linkedin.unica, .linkedin.facebook {
+  height: 30px; /* Ajusta el tamaño de los iconos de redes sociales */
+  margin-left: 10px; /* Espacio entre los iconos de redes sociales */
+}
+
+/* Ajustes de espaciado adicional */
+.navbar-nav {
+  margin-left: 20px; /* Ajusta el margen izquierdo de los enlaces de navegación */
+}
+
+.nav-item i{
+  color: black;
+  width: 10px;
+  height: 10px;
+  padding-right: 30px;
+}
+
+.nav-item {
+  margin-left: 1rem;
+}
+
+.nav-link{
+  margin-left: 100px;
+}
+
 @media only screen and (max-width: 480px) {
   .comunicacion-interna{
     font-size: 40px;
