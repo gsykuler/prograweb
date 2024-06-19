@@ -26,7 +26,7 @@ body {
   margin-bottom: -20px;
 }
 
-input {
+.uni {
   padding: 15px; /* Aumentar padding para campos */
   margin: 10px 0;
   width: 100%;
@@ -34,7 +34,7 @@ input {
   border-radius: 5px;
 }
 
-button {
+.boti {
   padding: 20px 35px;
   background-color: #4CAF50;
   color: white;
@@ -43,22 +43,27 @@ button {
   cursor: pointer;
   margin-top: 30px;
   font-size: 16px;
+  margin-top: 50px;
+  margin-bottom: -30px;
 }
 
 .result {
   margin-top: 20px;
-  font-size: 1.4em; /* Tamaño de texto más grande */
+  font-size: 1.5em; /* Tamaño de texto más grande */
   color: #333;
-  margin-top: 40px;
+  margin-top: 70px;
   margin-bottom: 10px;
 }
 
-h2 {
-  font-size: 40px;
+.io{
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 15px;
 }
 
-label {
-  font-size: 20px;
+.tip {
+  font-size: 30px;
+  margin: 30px;
 }
 
 .especial {

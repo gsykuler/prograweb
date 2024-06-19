@@ -42,7 +42,7 @@
                     <h1 class="header-text">Preguntas Frecuentes</h1>
                 </a>
                 <i class="fa-solid fa-dollar-sign"></i>
-                <a href="calculadora.html" class="header-link">
+                <a href="#calculadora" class="header-link">
                     <h1 class="header-text">Calculadora Precios</h1>
                 </a>
             </div>
@@ -287,12 +287,13 @@
                         <button type="submit" class="boton-enviar" onclick="enviarFormulario(event)">Enviar</button>
                     </div>
                 </form>
-                <div class="center"> <!-- Contenedor para centrar -->
+
+                <div class="center" id="calculadora"> <!-- Contenedor para centrar -->
                     <div class="container"> <!-- Caja de la calculadora -->
-                        <h2>Calculadora de Servicios de Consultoría</h2>
+                        <h2 class="io">Calculadora de Servicios de Consultoría</h2>
                         <form id="calculatorForm">
-                            <label for="hours">Cantidad de horas:</label>
-                            <input 
+                            <label class="tip" for="hours">Cantidad de horas:</label>
+                            <input class="uni"
                                 type="number" 
                                 id="hours" 
                                 name="hours" 
@@ -302,8 +303,8 @@
                                 oninput="validateInput(this)"
                             >
                             
-                            <label for="employees">Cantidad de empleados:</label>
-                            <input 
+                            <label  class="tip" for="employees">Cantidad de empleados:</label>
+                            <input class="uni"
                                 type="number" 
                                 id="employees" 
                                 name="employees" 
@@ -313,7 +314,7 @@
                                 oninput="validateInput(this)"
                             >
                             
-                            <button type="button" onclick="calculate()">Calcular</button>
+                            <button class="boti" type="button" onclick="calculate()">Calcular</button>
                         </form>
                         
                         <div class="result" id="result"></div> <!-- Donde se mostrará el resultado -->
