@@ -205,8 +205,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="total">
-                    <h1 class="comunicacion-interna2">NUESTROS SERVICIOS</h1>
+                <div class="total" id="servicios">
+                    <h1 class="comunicacion-interna2" >NUESTROS SERVICIOS</h1>
                     <div class="CONTENER">
                         <!-- Primera sección: Consultoría -->
                         <div class="consultoria">
@@ -223,7 +223,7 @@
                             </ul>
                         </div>
                         <!-- Segunda sección: Capacitaciones Abiertas e In Company -->
-                        <div class="capacitaciones" id="servicios">
+                        <div class="capacitaciones">
                             <h2>Capacitaciones Abiertas e In Company</h2>
                             <ul>
                                 <li>Redacción Corporativa de e-mails, informes, presentaciones, minutas, redes sociales, etc.</li>
@@ -287,6 +287,38 @@
                         <button type="submit" class="boton-enviar" onclick="enviarFormulario(event)">Enviar</button>
                     </div>
                 </form>
+                <div class="center"> <!-- Contenedor para centrar -->
+                    <div class="container"> <!-- Caja de la calculadora -->
+                        <h2>Calculadora de Servicios de Consultoría</h2>
+                        <form id="calculatorForm">
+                            <label for="hours">Cantidad de horas:</label>
+                            <input 
+                                type="number" 
+                                id="hours" 
+                                name="hours" 
+                                min="1" 
+                                placeholder="Ingrese la cantidad de horas"
+                                required 
+                                oninput="validateInput(this)"
+                            >
+                            
+                            <label for="employees">Cantidad de empleados:</label>
+                            <input 
+                                type="number" 
+                                id="employees" 
+                                name="employees" 
+                                min="1" 
+                                placeholder="Ingrese la cantidad de empleados"
+                                required 
+                                oninput="validateInput(this)"
+                            >
+                            
+                            <button type="button" onclick="calculate()">Calcular</button>
+                        </form>
+                        
+                        <div class="result" id="result"></div> <!-- Donde se mostrará el resultado -->
+                    </div>
+                </div>
 
                 <div class="container">
                     <div class="header1">
@@ -422,7 +454,32 @@
 
                 observer.observe(document.getElementById('stats-section'));
 
+                function calculate() {
+                const hours = document.getElementById("hours").value;
+                const employees = document.getElementById("employees").value;
 
+                // Validación de datos faltantes
+                if (!hours || !employees) {
+                    alert("Faltó completar algun/o dato/s. Por favor, ingrese la cantidad de horas y empleados correctamente.");
+                    return; // No continuar si falta algo
+                }
+
+                const costPerHour = 20000; // Precio por hora
+                const totalCost = costPerHour * hours * employees; // Cálculo del costo total
+
+                const resultElement = document.getElementById("result");
+                resultElement.textContent = `El precio total por el servicio es de: $${totalCost.toLocaleString()}`; // Formato con comas
+
+                // Limpiar los campos después de calcular
+                document.getElementById("calculatorForm").reset();
+            }
+
+            // Validación para asegurar que el valor ingresado es mayor que 0
+            function validateInput(input) {
+                if (input.value < 1) {
+                    input.value = 1; // Asegurar que el valor mínimo sea 1
+                }
+            }
                 </script>                
     </body>
 </html>

@@ -1,5 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Asegura que el flexbox funcione para toda la altura de la página */
+  background-color: #f5f5f5;
+}
+
+.center {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  height: 100%;
+}
+
+.container {
+  max-width: 600px; /* Hacer más grande el contenedor */
+  padding: 30px; /* Más padding para hacerlo más espacioso */
+  padding-right: 40px;
+  background-color: white;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+input {
+  padding: 15px; /* Aumentar padding para campos */
+  margin: 10px 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 20px 35px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.4em; /* Tamaño de texto más grande */
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+label {
+  font-size: 20px;
+}
+
+.especial {
+  background-color: black;
+  font-weight: bold;
+  font-size: 17px;
+  margin-left: 20px;
+  border-radius: 15px;
+  padding: 22px;
+}
+
+
+
+
+
+
 .header-text {
   white-space: nowrap;
 }
