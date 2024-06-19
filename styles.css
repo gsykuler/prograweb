@@ -678,10 +678,6 @@ p{
   margin-left: 1rem;
 }
 
-.nav-link{
-  margin-left: 100px;
-}
-
 @media only screen and (max-width: 480px) {
   .logo{
     margin-left: 270px;
