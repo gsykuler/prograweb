@@ -866,6 +866,10 @@ p{
     display: none;
   }
 
+  .grid-container2{
+    margin-left: 60px;
+  }
+
 }
 
 @media only screen and (max-width: 1500px) {
