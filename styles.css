@@ -767,18 +767,12 @@ p{
       padding: 0.5rem;
   }
 
-  .navbar-brand {
-      display: flex;
-      align-items: center;
-  }
-
   .navbar-brand .logo {
       max-height: 40px;
-      margin-right: 0.5rem;
   }
 
   .navbar-toggler {
-      margin-right: 250px;
+      margin-left: 250px;
   }
 
   .navbar-collapse {
