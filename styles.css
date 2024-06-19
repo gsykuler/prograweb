@@ -81,13 +81,11 @@ body {
 
 /* Estilo del encabezado */
 .header {
-  background-color: white; /* Rojo */
   padding: 10px;
   display: flex;
   justify-content: space-between; /* Distribuye los elementos horizontalmente */
   align-items: center; /* Centra verticalmente los elementos */
   margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 .linkedin {
@@ -119,14 +117,6 @@ body {
 .logo {
   width: 160px; /* Doble del ancho actual */
   margin-left: 20px; /* Espacio entre el logo y el borde izquierdo del encabezado */
-}
-
-/* Estilo del texto del encabezado */
-.header-text {
-  font-size: 20px; /* Tamaño de la fuente */
-  margin: 0; /* Elimina el margen por defecto */
-  color: black; /* Color del texto */
-  margin-right: 10px; /* Agrega un margen derecho de 10px */
 }
 
 .contenido-segundo {
@@ -164,59 +154,6 @@ body {
   margin-top: 10px; /* Ajustar el espacio superior */
   color: #000; /* Color de letra negro */
   font-weight: bold; /* Letras en negrita */
-}
-
-/* Estilo de los enlaces del encabezado */
-.header-link {
-  text-decoration: none; /* Elimina el subrayado predeterminado */
-  color: black; /* Color del texto */
-}
-
-/* Estilo de los enlaces visitados */
-.header-link:visited {
-  color: black; /* Color del texto cuando se toca */
-}
-
-/* Estilo del contenedor de texto del encabezado */
-.header-text-container {
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Alinea verticalmente los elementos */
-  margin-right: 725px;
-  margin-left: 1px;
-}
-
-.header-text-container i {
-  width: 30px;
-  color: black;
-  font-size: 8pt;
-}
-
-.header-text-container a {
-  margin: auto 30px;
-  margin-right: 5px;
-  margin-left: 15px;
-}
-
-.header-text-container a h1 {
-  color: black;
-  justify-content: space-between;
-}
-
-/* Estilo de los botones del encabezado */
-.header-link button {
-  background-color: #ffffff; /* Color de fondo */
-  border: 1px solid #000000; /* Borde */
-  padding: 8px 16px; /* Espacio interior */
-  color: #000000; /* Color del texto */
-  font-size: 16px; /* Tamaño de letra */
-  cursor: pointer; /* Cambia el cursor al pasar el ratón */
-}
-
-/* Estilo de los botones del encabezado al pasar el ratón */
-.header-link button:hover {
-  background-color: #000000; /* Color de fondo al pasar el ratón */
-  color: #ffffff; /* Color del texto al pasar el ratón */
 }
 
 /* Estilo del pie de página */
@@ -378,7 +315,6 @@ footer {
   background-color: white;
 }
 
-
 .carousel-item img {
   z-index: 0;
 }
@@ -473,9 +409,6 @@ footer p {
   z-index: 10; /* Asegura que esté por encima de otros elementos */
   margin-left: 10px;
 }
-
-
-/* #ACA */
 
 .CONTENER {
   display: flex; /* Alineación horizontal */
@@ -708,11 +641,6 @@ p{
   font-size: 60px; /* Tamaño de fuente */
   font-weight: bold; /* Texto en negrita */
   margin-left: 20px;
-}
-
-/* Estilos personalizados para el header */
-.header {
-  margin-bottom: none;
 }
 
 .logo {
