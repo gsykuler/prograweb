@@ -79,10 +79,6 @@ body {
   padding: 22px;
 }
 
-.header-text {
-  white-space: nowrap;
-}
-
 /* Estilo del encabezado */
 .header {
   background-color: white; /* Rojo */
