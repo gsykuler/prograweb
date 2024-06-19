@@ -26,6 +26,10 @@ body {
   margin-bottom: -20px;
 }
 
+.contenido{
+  margin-top: -20px;
+}
+
 .uni {
   padding: 15px; /* Aumentar padding para campos */
   margin: 10px 0;
