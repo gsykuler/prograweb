@@ -1002,4 +1002,8 @@ p{
   .form-msg{
     display: none;
   }
+
+  .grid-container2{
+    margin-right: 60px;
+  }
 }
