@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
 
+.back-button2{
+    display: none;
+}
+
 header {
     background-color: #1c1c1c;
     padding: 10px;
@@ -124,5 +128,23 @@ section {
         text-decoration: none; /* Sin subrayado */
     }
 }
+
+@media only screen and (max-width: 850px) {
+    .back-button2 {
+        display: block; /* Asegúrate de que se muestre el botón */
+        position: fixed; /* Posiciónalo de forma fija si quieres que se mantenga visible al hacer scroll */
+        top: 10px; /* Ajusta la posición vertical según sea necesario */
+        left: 10px; /* Ajusta la posición horizontal según sea necesario */
+        background-color: #fff;
+        color: #000;
+        padding: 10px 20px;
+        border-radius: 5px;
+        width: 150px;
+        height: 50px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}    
+
 
 
