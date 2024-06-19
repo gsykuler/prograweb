@@ -999,4 +999,7 @@ p{
     font-size: 20px;
   }
 
+  .form-msg{
+    display: none;
+  }
 }
