@@ -985,4 +985,14 @@ p{
     display: none;
 }
 
+  .header-text-container h1{
+    font-size: 14px;
+  }
+
+  .logo{
+    width: 100px;
+    height: 40px;
+    margin-right: 30px;
+  }
+
 }
