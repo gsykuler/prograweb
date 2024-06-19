@@ -981,8 +981,8 @@ p{
     display: none;
   }
 
-
-
-
+  .fa-home.vet {
+    display: none;
+}
 
 }
