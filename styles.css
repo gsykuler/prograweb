@@ -75,11 +75,6 @@ body {
   padding: 22px;
 }
 
-
-
-
-
-
 .header-text {
   white-space: nowrap;
 }
@@ -791,7 +786,7 @@ p{
   }
 
   .header-text-container {
-    margin-top: 10px;
+    margin-top: 22px;
     flex-direction: row;
     margin-left: 740px;
   }
